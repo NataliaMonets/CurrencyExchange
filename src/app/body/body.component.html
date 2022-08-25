@@ -9,7 +9,7 @@
           {{item.sign}} <span>{{item.name}}</span>
         </mat-option>
       </mat-select>
-      <input type="number" [(ngModel)]="value" name="value" (keypress)="getInfo()" [disabled]="isDiasable" autocomplete="off">
+      <input type="number" [(ngModel)]="value" name="value"  (keydown)="getInfo()" [disabled]="isDiasable" autocomplete="off">
     </div>
     <div class="get">
       <mat-label>Отримую</mat-label>
