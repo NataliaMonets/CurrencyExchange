@@ -1,0 +1,25 @@
+<main>
+  <div class="background"></div>
+  <section>
+    <div class="give">
+      <mat-label>Міняю</mat-label>
+      <mat-select [(ngModel)]="currencyFrom" placeholder="Оберіть валюту">
+        <mat-option *ngFor="let item of currencyName" [value]="item.sign" panelClass="position" (click)="getInfo()">
+          <img with="20" height="20" [src]="item.icon">
+          {{item.sign}} <span>{{item.name}}</span>
+        </mat-option>
+      </mat-select>
+      <input type="number" [(ngModel)]="value" name="value" (keypress)="getInfo()" [disabled]="isDiasable" autocomplete="off">
+    </div>
+    <div class="get">
+      <mat-label>Отримую</mat-label>
+      <mat-select [(ngModel)]="currencyTo" placeholder="Оберіть валюту">
+        <mat-option *ngFor="let item of currencyName" [value]="item.sign" (click)="getInfo()">
+          <img with="20" height="20" [src]="item.icon">
+          {{item.sign}} <span>{{item.name}}</span>
+        </mat-option>
+      </mat-select>
+      <input type="text" readonly [value]="result | number">
+    </div>
+  </section>
+</main>

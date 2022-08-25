@@ -1,0 +1,104 @@
+@import '../../app/shared/style/fonts.scss';
+@import '../../app/shared/style/reset';
+
+main {
+    height: 70%;
+    font-family: 'YanoneKaffeesatz';
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 5px 5px 15px rgba(212, 212, 212, 0.534);
+    border-radius: 15px;
+    background-color: white;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    div {
+        display: flex;
+        height: 50%;
+        width: 45%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 8px;
+    }
+}
+
+.background {
+    opacity: 0.05;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 75%;
+    background-image: url('../../assets/images/depositphotos.jpg');
+    z-index: 1;
+}
+
+input {
+    margin-top: 20px;
+    height: 30%;
+    background-color: rgba(236, 235, 235, 0.404);
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+mat-select {
+    box-sizing: border-box;
+    height: 30%;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 7px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'YanoneKaffeesatz';
+}
+
+mat-select:focus {
+    border: 1.5px solid darkblue;
+    box-shadow: 5px 5px 15px rgba(128, 157, 253, 0.219);
+}
+
+span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+input:active,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: 1px solid rgba(0, 23, 87, 0.685);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+mat-label {
+    font-size: 26px;
+    color: rgb(3, 3, 105);
+}
+
+mat-option {
+    font-family: 'YanoneKaffeesatz';
+    font-weight: 400;
+}

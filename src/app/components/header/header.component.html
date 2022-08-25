@@ -1,0 +1,18 @@
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/images/c.svg">
+      <h1>Currency rate</h1>
+    </div>
+    <section>
+      <ul>
+        <li><img [src]="currencyName[1].icon"><span>USD</span>{{USDrate | number: '1.1-1'}}</li>
+        <li><img [src]="currencyName[0].icon"><span>EUR</span>{{EURrate | number: '1.1-1'}}</li>
+      </ul>
+      <div class="dateDiv">
+        <img src="../../../assets/images/verified-date.svg">
+        <p>{{currentDate}}</p>
+      </div>
+    </section>
+  </div>
+</header>
