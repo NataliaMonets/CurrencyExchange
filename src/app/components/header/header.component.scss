@@ -230,6 +230,11 @@ section {
 @media (max-width: 340px) {
     section {
         justify-content: flex-end;
+        width: 40%;
+    }
+
+    .logo {
+        width: 60%;
     }
     
     .dateDiv {
